@@ -1,0 +1,14 @@
+#import "AutoLayoutMacros-Prefix.pch"
+
+#ifdef __OBJC__
+
+#import <XCTest/XCTest.h>
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Woverriding-method-mismatch"
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#define HC_SHORTHAND 1
+#import <OCHamcrest/OCHamcrest.h>
+#pragma clang diagnostic pop
+
+#endif
