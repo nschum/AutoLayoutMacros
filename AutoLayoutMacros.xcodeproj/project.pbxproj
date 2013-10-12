@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AA10006B5D3B8C498E03D01 /* AbsoluteSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA101BA0F9E65A4643EC1D4 /* AbsoluteSizeTests.m */; };
+		1AA1022D12FFC56628DF5829 /* ColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1078EDF2A5B8172CCDA4B /* ColoredView.m */; };
 		1AA1030932B7C553A8BE89CC /* ALMPriority.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10B8ED6E515BCC0D4BF61 /* ALMPriority.m */; };
 		1AA1036DE412C2953B693B85 /* RelativeSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10E828FDB3EC81BB00E1C /* RelativeSizeTests.m */; };
 		1AA10402040F1487F18D2EBC /* ALMRelations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1081E1EEA69FDF377EF95 /* ALMRelations.m */; };
@@ -43,8 +44,10 @@
 		1AA103943BE3CAFB2E0162D9 /* AutoLayoutMacrosShort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMacrosShort.h; sourceTree = "<group>"; };
 		1AA104ACE50D9BCB6293DEC3 /* AutoLayoutMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMacros.h; sourceTree = "<group>"; };
 		1AA1052C86F1262436CF9ADE /* ALMConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMConstraints.m; sourceTree = "<group>"; };
+		1AA1078EDF2A5B8172CCDA4B /* ColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredView.m; sourceTree = "<group>"; };
 		1AA107B21A0A2A48E1FE9E3B /* AutoLayoutMacrosTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutMacrosTests-Prefix.pch"; sourceTree = "<group>"; };
 		1AA1081E1EEA69FDF377EF95 /* ALMRelations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMRelations.m; sourceTree = "<group>"; };
+		1AA10B5CE61740E28CD8EDA0 /* ColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredView.h; sourceTree = "<group>"; };
 		1AA10B8ED6E515BCC0D4BF61 /* ALMPriority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMPriority.m; sourceTree = "<group>"; };
 		1AA10BAE35C8F596E6CC4A04 /* ALMPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMPriority.h; sourceTree = "<group>"; };
 		1AA10DA47F86D53D9E7BC411 /* ALMConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMConstraints.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				246C995D17F4578B007D23CD /* MainMenu.xib */,
 				246C996017F4578B007D23CD /* Images.xcassets */,
 				246C994F17F4578B007D23CD /* Supporting Files */,
+				1AA1078EDF2A5B8172CCDA4B /* ColoredView.m */,
+				1AA10B5CE61740E28CD8EDA0 /* ColoredView.h */,
 			);
 			path = AutoLayoutMacrosDemoOSX;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				1AA1030932B7C553A8BE89CC /* ALMPriority.m in Sources */,
 				1AA10402040F1487F18D2EBC /* ALMRelations.m in Sources */,
 				1AA105A9BCDCCE4C6C340243 /* ALMConstraints.m in Sources */,
+				1AA1022D12FFC56628DF5829 /* ColoredView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
     </dependencies>
     <objects>
@@ -650,14 +651,33 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <value key="minSize" type="size" width="480" height="360"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="gch-Iv-eNQ" customClass="ColoredView">
+                        <rect key="frame" x="100" y="50" width="280" height="260"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gch-Iv-eNQ" secondAttribute="trailing" constant="100" id="N77-LW-y25"/>
+                    <constraint firstItem="gch-Iv-eNQ" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="100" id="RWq-8V-aRW"/>
+                    <constraint firstItem="gch-Iv-eNQ" firstAttribute="top" secondItem="372" secondAttribute="top" constant="50" id="c59-bX-iVF"/>
+                    <constraint firstAttribute="bottom" secondItem="gch-Iv-eNQ" secondAttribute="bottom" constant="50" id="gLw-Fe-UoD"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="redView" destination="gch-Iv-eNQ" id="IWa-EE-6Qi"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
