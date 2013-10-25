@@ -118,6 +118,28 @@ _ALMAlignMake(NSLayoutAttributeCenterY, item, to, ## __VA_ARGS__)
 #define ALM_ALIGN_BASELINE(item, to, ...) \
 _ALMAlignMake(NSLayoutAttributeBaseline, item, to, ## __VA_ARGS__)
 
+#pragma mark - inset
+
+#define _ALMInsetMake(attribute, view, ...) \
+_ALMConstraintMake(view, attribute, attribute, view.superview, ## __VA_ARGS__)
+#define _ALMInsetMakeInverse(attribute, view, ...) \
+_ALMConstraintMake(view.superview, attribute, attribute, view, ## __VA_ARGS__)
+
+#define ALM_INSET_LEADING(view, ...) \
+_ALMInsetMake(NSLayoutAttributeLeading, view, ## __VA_ARGS__)
+#define ALM_INSET_TRAILING(view, ...) \
+_ALMInsetMakeInverse(NSLayoutAttributeTrailing, view, ## __VA_ARGS__)
+
+#define ALM_INSET_LEFT(view, ...) \
+_ALMInsetMake(NSLayoutAttributeLeft, view, ## __VA_ARGS__)
+#define ALM_INSET_RIGHT(view, ...) \
+_ALMInsetMakeInverse(NSLayoutAttributeRight, view, ## __VA_ARGS__)
+
+#define ALM_INSET_TOP(view, ...) \
+_ALMInsetMake(NSLayoutAttributeTop, view, ## __VA_ARGS__)
+#define ALM_INSET_BOTTOM(view, ...) \
+_ALMInsetMakeInverse(NSLayoutAttributeBottom, view, ## __VA_ARGS__)
+
 #pragma mark - spacing
 
 #define ALM_HSPACE(leftItem, rightItem, ...) \

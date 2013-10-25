@@ -45,6 +45,16 @@
             ALIGN_BOTTOM(_blueView, _redView, -10),
         ],
         @[
+            INSET_LEFT(_redView, 10),
+            INSET_TOP(_redView, 10),
+            INSET_RIGHT(_redView, 10),
+            INSET_BOTTOM(_redView, 10),
+            INSET_LEFT(_blueView, 50),
+            INSET_TOP(_blueView, 50),
+            INSET_RIGHT(_blueView, 50),
+            INSET_BOTTOM(_blueView, 50),
+        ],
+        @[
             ALIGN_LEFT(_blueView, _redView, 10),
             ALIGN_TOP(_blueView, _redView, 10),
             PIN_WIDTH(_blueView, 100),

@@ -14,6 +14,7 @@
 		1AA10402040F1487F18D2EBC /* ALMRelations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1081E1EEA69FDF377EF95 /* ALMRelations.m */; };
 		1AA104B7C2887A7C64FC05B9 /* SpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10E258CB485EC8A0105D5 /* SpaceTests.m */; };
 		1AA105A9BCDCCE4C6C340243 /* ALMConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1052C86F1262436CF9ADE /* ALMConstraints.m */; };
+		1AA107A3E6BDF9FA984554CC /* InsetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA10718FFAB16B3ACDB7DE4 /* InsetTests.m */; };
 		246C994917F4578B007D23CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C994817F4578B007D23CD /* Cocoa.framework */; };
 		246C995317F4578B007D23CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 246C995117F4578B007D23CD /* InfoPlist.strings */; };
 		246C995517F4578B007D23CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246C995417F4578B007D23CD /* main.m */; };
@@ -44,6 +45,7 @@
 		1AA103943BE3CAFB2E0162D9 /* AutoLayoutMacrosShort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMacrosShort.h; sourceTree = "<group>"; };
 		1AA104ACE50D9BCB6293DEC3 /* AutoLayoutMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutMacros.h; sourceTree = "<group>"; };
 		1AA1052C86F1262436CF9ADE /* ALMConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMConstraints.m; sourceTree = "<group>"; };
+		1AA10718FFAB16B3ACDB7DE4 /* InsetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsetTests.m; sourceTree = "<group>"; };
 		1AA1078EDF2A5B8172CCDA4B /* ColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredView.m; sourceTree = "<group>"; };
 		1AA107B21A0A2A48E1FE9E3B /* AutoLayoutMacrosTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutMacrosTests-Prefix.pch"; sourceTree = "<group>"; };
 		1AA1081E1EEA69FDF377EF95 /* ALMRelations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMRelations.m; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				1AA10E258CB485EC8A0105D5 /* SpaceTests.m */,
 				1AA10E828FDB3EC81BB00E1C /* RelativeSizeTests.m */,
 				1AA101BA0F9E65A4643EC1D4 /* AbsoluteSizeTests.m */,
+				1AA10718FFAB16B3ACDB7DE4 /* InsetTests.m */,
 			);
 			path = AutoLayoutMacrosTests;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				1AA1036DE412C2953B693B85 /* RelativeSizeTests.m in Sources */,
 				24ED754B181043EA008F600A /* ConstraintMatchers.m in Sources */,
 				1AA10006B5D3B8C498E03D01 /* AbsoluteSizeTests.m in Sources */,
+				1AA107A3E6BDF9FA984554CC /* InsetTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

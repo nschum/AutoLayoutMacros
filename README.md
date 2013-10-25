@@ -37,6 +37,20 @@ ALIGN_TOP(view1, view2)
 </tr>
 <tr>
 <td><code>
+INSET_LEFT(view1, 50)
+</code></td>
+<td><pre>
+[NSLayoutConstraint constraintWithItem:view1
+                             attribute:NSLayoutAttributeLeft
+                             relatedBy:NSLayoutRelationEqual
+                                toItem:view1.superview
+                             attribute:NSLayoutAttributeLeft
+                            multiplier:1.0
+                              constant:50.0]
+</pre></td>
+</tr>
+<tr>
+<td><code>
 PIN_WIDTH(view1, LE(100))
 </code></td>
 <td><pre>
@@ -96,6 +110,19 @@ constraint.priority = 500;
     ALIGN_LEADING(view1, view2, 20)
     ALIGN_LEADING(view1, GE(view2))
     ALIGN_LEADING(view1, LE(view2, 10))
+
+    INSET_LEADING(view1)
+    INSET_TRAILING(view1)
+    INSET_LEFT(view1)
+    INSET_RIGHT(view1)
+    INSET_CENTER_X(view1)
+    INSET_TOP(view1)
+    INSET_BOTTOM(view1)
+    INSET_CENTER_Y(view1)
+    INSET_BASELINE(view1)
+
+    INSET_LEADING(view1, -20)
+    INSET_LEADING(view1, GE(50))
 
     PIN_WIDTH(view1, view2)
     PIN_HEIGHT(view1, view2)

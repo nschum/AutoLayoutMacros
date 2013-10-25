@@ -13,6 +13,13 @@
 #define ALIGN_CENTER_Y(item, toItem, ...) ALM_ALIGN_CENTER_Y(item, toItem, ## __VA_ARGS__)
 #define ALIGN_BASELINE(item, toItem, ...) ALM_ALIGN_BASELINE(item, toItem, ## __VA_ARGS__)
 
+#define INSET_LEADING(item, ...) ALM_INSET_LEADING(item, ## __VA_ARGS__)
+#define INSET_TRAILING(item, ...) ALM_INSET_TRAILING(item, ## __VA_ARGS__)
+#define INSET_LEFT(item, ...) ALM_INSET_LEFT(item, ## __VA_ARGS__)
+#define INSET_RIGHT(item, ...) ALM_INSET_RIGHT(item, ## __VA_ARGS__)
+#define INSET_TOP(item, ...) ALM_INSET_TOP(item, ## __VA_ARGS__)
+#define INSET_BOTTOM(item, ...) ALM_INSET_BOTTOM(item, ## __VA_ARGS__)
+
 #define HSPACE(leftItem, rightItem, ...) ALM_HSPACE(leftItem, rightItem, ## __VA_ARGS__)
 #define VSPACE(leftItem, rightItem, ...) ALM_VSPACE(leftItem, rightItem, ## __VA_ARGS__)
 
