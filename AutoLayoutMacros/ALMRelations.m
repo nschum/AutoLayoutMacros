@@ -18,6 +18,7 @@ _ALMRelation _ALMRelationMake(NSLayoutRelation relation, CGFloat c) {
 
 __attribute__((overloadable))
 _ALMItemRelation _ALMItemRelationMake(NSLayoutRelation relation, id item, CGFloat m, CGFloat c) {
+    NSCAssert(item, @"Item in relation must not be nil");
     return (_ALMItemRelation) {
         .relation = relation,
         .item = item,
